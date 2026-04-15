@@ -4,6 +4,8 @@ class Eai < Formula
   version "0.14.0"
   license "MIT"
 
+  bottle :unneeded
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/feliperbroering/eai/releases/download/v#{version}/eai-darwin-arm64.tar.gz"
