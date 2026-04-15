@@ -1,26 +1,26 @@
 class Eai < Formula
   desc "Natural language to shell commands"
   homepage "https://github.com/feliperbroering/eai"
-  version "0.9.0"
+  version "0.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/feliperbroering/eai/releases/download/v#{version}/eai-darwin-arm64.tar.gz"
-      sha256 "f1bc15551963d401ce25541d074612e53e434a2cd6ad11b6ef34e29c6f86e063"
+      sha256 "6bbd431e078e743847c128665c2a2d1f078aeb39207afa319bf6c564093cff3f"
     else
       url "https://github.com/feliperbroering/eai/releases/download/v#{version}/eai-darwin-amd64.tar.gz"
-      sha256 "7782e75b9d8e43f10eeaf67b62254b33b01eae59197a8d3aabb515a3f1766744"
+      sha256 "6d344a432d76abb483fed949c4bdac59cb2559a79dda8200c8e886d7654050b8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/feliperbroering/eai/releases/download/v#{version}/eai-linux-arm64.tar.gz"
-      sha256 "092add9a58c7460836f4dc892476843f506c7e18779ab0d99fdeb72216aa0f5b"
+      sha256 "bf3ab0ff4b7cd51bd08996f552b98980608c93b82939ede6ff77329b02d29fbc"
     else
       url "https://github.com/feliperbroering/eai/releases/download/v#{version}/eai-linux-amd64.tar.gz"
-      sha256 "a366da37466a44756d142140031d56e9415a86326a42f4713e6432aa39a2df17"
+      sha256 "164857e11d82ff8b4386f5c5262da2503e255818e8e99da0aeeadaa06dbf525b"
     end
   end
 
